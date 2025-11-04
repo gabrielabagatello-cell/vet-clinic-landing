@@ -1,49 +1,49 @@
 const services = [
   {
-    name: "Consulta General",
-    description: "Examen completo de salud para tu mascota con diagnóstico profesional.",
+    name: "General Consultation",
+    description: "Complete health examination for your pet with professional diagnosis.",
     price: "150 RON",
     icon: "🩺",
   },
   {
-    name: "Vacunación",
-    description: "Programa completo de vacunación para proteger a tu mascota.",
+    name: "Vaccination",
+    description: "Complete vaccination program to protect your pet.",
     price: "80 RON",
     icon: "💉",
   },
   {
-    name: "Cirugía",
-    description: "Servicios quirúrgicos realizados por veterinarios especializados.",
-    price: "Desde 500 RON",
+    name: "Surgery",
+    description: "Surgical services performed by specialized veterinarians.",
+    price: "From 500 RON",
     icon: "⚕️",
   },
   {
-    name: "Emergencias",
-    description: "Atención de urgencias disponible las 24 horas del día.",
+    name: "Emergencies",
+    description: "Emergency care available 24 hours a day.",
     price: "200 RON",
     icon: "🚨",
   },
   {
-    name: "Estética",
-    description: "Servicios de peluquería y cuidado estético para tu mascota.",
+    name: "Grooming",
+    description: "Grooming and aesthetic care services for your pet.",
     price: "100 RON",
     icon: "✂️",
   },
   {
-    name: "Radiología",
-    description: "Diagnóstico por imágenes con tecnología de última generación.",
+    name: "Radiology",
+    description: "Image diagnosis with state-of-the-art technology.",
     price: "180 RON",
     icon: "📷",
   },
   {
-    name: "Laboratorio",
-    description: "Análisis clínicos completos para diagnóstico preciso.",
+    name: "Laboratory",
+    description: "Complete clinical analysis for accurate diagnosis.",
     price: "120 RON",
     icon: "🔬",
   },
   {
-    name: "Control de Parásitos",
-    description: "Tratamiento y prevención de parásitos internos y externos.",
+    name: "Parasite Control",
+    description: "Treatment and prevention of internal and external parasites.",
     price: "90 RON",
     icon: "🐛",
   },
@@ -55,11 +55,11 @@ export default function Services() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary-dark mb-4">
-            Nuestros Servicios
+            Our Services
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Ofrecemos una amplia gama de servicios veterinarios profesionales
-            para el cuidado integral de tu mascota.
+            We offer a wide range of professional veterinary services
+            for the comprehensive care of your pet.
           </p>
         </div>
 

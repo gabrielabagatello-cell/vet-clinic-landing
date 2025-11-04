@@ -33,7 +33,7 @@ export default function Header() {
           {/* Logo */}
           <div className="text-2xl font-bold text-primary-dark">
             <button onClick={() => scrollToSection("hero")} className="hover:text-primary transition-colors">
-              Clínica Veterinaria Familiar
+              Family Veterinary Clinic
             </button>
           </div>
 
@@ -43,25 +43,25 @@ export default function Header() {
               onClick={() => scrollToSection("hero")}
               className="text-gray-700 hover:text-primary transition-colors font-medium"
             >
-              Inicio
+              Home
             </button>
             <button
               onClick={() => scrollToSection("services")}
               className="text-gray-700 hover:text-primary transition-colors font-medium"
             >
-              Servicios
+              Services
             </button>
             <button
               onClick={() => scrollToSection("testimonials")}
               className="text-gray-700 hover:text-primary transition-colors font-medium"
             >
-              Testimonios
+              Testimonials
             </button>
             <button
               onClick={() => scrollToSection("contact")}
               className="text-gray-700 hover:text-primary transition-colors font-medium"
             >
-              Contacto
+              Contact
             </button>
           </nav>
 
@@ -88,25 +88,25 @@ export default function Header() {
               onClick={() => scrollToSection("hero")}
               className="block w-full text-left text-gray-700 hover:text-primary transition-colors py-2"
             >
-              Inicio
+              Home
             </button>
             <button
               onClick={() => scrollToSection("services")}
               className="block w-full text-left text-gray-700 hover:text-primary transition-colors py-2"
             >
-              Servicios
+              Services
             </button>
             <button
               onClick={() => scrollToSection("testimonials")}
               className="block w-full text-left text-gray-700 hover:text-primary transition-colors py-2"
             >
-              Testimonios
+              Testimonials
             </button>
             <button
               onClick={() => scrollToSection("contact")}
               className="block w-full text-left text-gray-700 hover:text-primary transition-colors py-2"
             >
-              Contacto
+              Contact
             </button>
           </nav>
         )}

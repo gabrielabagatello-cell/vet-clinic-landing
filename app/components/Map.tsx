@@ -8,15 +8,15 @@ export default function Map() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary-dark mb-4">
-            Encuéntranos
+            Find Us
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Estamos ubicados en el corazón de Bucuresti para tu comodidad
+            We are located in the heart of Bucharest for your convenience
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {/* Mapa */}
+          {/* Map */}
           <div className="rounded-lg overflow-hidden shadow-lg h-96">
             <iframe
               width="100%"
@@ -26,14 +26,14 @@ export default function Map() {
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
               src={mapUrl}
-              title="Ubicación de la clínica veterinaria"
+              title="Veterinary clinic location"
             />
           </div>
 
-          {/* Información de Contacto */}
+          {/* Contact Information */}
           <div className="bg-white rounded-lg shadow-lg p-8">
             <h3 className="text-2xl font-bold text-primary-dark mb-6">
-              Información de Contacto
+              Contact Information
             </h3>
             <div className="space-y-6">
               <div className="flex items-start gap-4">
@@ -59,7 +59,7 @@ export default function Map() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Dirección</h4>
+                  <h4 className="font-semibold text-gray-900 mb-1">Address</h4>
                   <p className="text-gray-600">{address}</p>
                 </div>
               </div>
@@ -81,7 +81,7 @@ export default function Map() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Teléfono</h4>
+                  <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
                   <a
                     href="tel:0712234234"
                     className="text-primary hover:text-primary-dark transition-colors"
@@ -108,13 +108,13 @@ export default function Map() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Horario</h4>
+                  <h4 className="font-semibold text-gray-900 mb-1">Hours</h4>
                   <p className="text-gray-600">
-                    Lunes - Viernes: 9:00 - 18:00
+                    Monday - Friday: 9:00 - 18:00
                     <br />
-                    Sábados: 9:00 - 14:00
+                    Saturday: 9:00 - 14:00
                     <br />
-                    Emergencias: 24/7
+                    Emergencies: 24/7
                   </p>
                 </div>
               </div>

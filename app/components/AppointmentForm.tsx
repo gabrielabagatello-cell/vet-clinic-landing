@@ -29,20 +29,20 @@ export default function AppointmentForm() {
     setIsSubmitting(true);
     setSubmitStatus({ type: null, message: "" });
 
-    // Para versión estática, simplemente redirigir a teléfono o email
+    // For static version, simply redirect to phone or email
     const phoneNumber = "0712234234";
-    const email = "info@clinicaveterinaria.com";
-    const subject = encodeURIComponent(`Solicitud de Cita - ${formData.name}`);
+    const email = "info@veterinaryclinic.com";
+    const subject = encodeURIComponent(`Appointment Request - ${formData.name}`);
     const body = encodeURIComponent(
-      `Nombre: ${formData.name}\nTeléfono: ${formData.phone}\nEmail: ${formData.email}\nMensaje: ${formData.message}`
+      `Name: ${formData.name}\nPhone: ${formData.phone}\nEmail: ${formData.email}\nMessage: ${formData.message}`
     );
 
-    // Abrir email cliente
+    // Open email client
     window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
 
     setSubmitStatus({
       type: "success",
-      message: "Se abrirá tu cliente de email. Si prefieres, también puedes llamarnos al 0712.234.234",
+      message: "Your email client will open. If you prefer, you can also call us at 0712.234.234",
     });
     setIsSubmitting(false);
   };
@@ -50,13 +50,13 @@ export default function AppointmentForm() {
   return (
     <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
       <h3 className="text-2xl font-bold text-primary-dark mb-6 text-center">
-        Solicita una Cita
+        Request an Appointment
       </h3>
 
       <div className="space-y-4">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-            Nombre *
+            Name *
           </label>
           <input
             type="text"
@@ -66,13 +66,13 @@ export default function AppointmentForm() {
             value={formData.name}
             onChange={handleChange}
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-            placeholder="Tu nombre completo"
+            placeholder="Your full name"
           />
         </div>
 
         <div>
           <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-            Teléfono *
+            Phone *
           </label>
           <input
             type="tel"
@@ -98,13 +98,13 @@ export default function AppointmentForm() {
             value={formData.email}
             onChange={handleChange}
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-            placeholder="tu@email.com"
+            placeholder="your@email.com"
           />
         </div>
 
         <div>
           <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-            Mensaje
+            Message
           </label>
           <textarea
             id="message"
@@ -113,7 +113,7 @@ export default function AppointmentForm() {
             onChange={handleChange}
             rows={4}
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-            placeholder="Cuéntanos sobre tu mascota o el motivo de la cita..."
+            placeholder="Tell us about your pet or the reason for the appointment..."
           />
         </div>
 
@@ -134,7 +134,7 @@ export default function AppointmentForm() {
           disabled={isSubmitting}
           className="w-full bg-primary hover:bg-primary-dark text-white font-semibold py-3 px-6 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          {isSubmitting ? "Enviando..." : "Send"}
+          {isSubmitting ? "Sending..." : "Send"}
         </button>
       </div>
     </form>

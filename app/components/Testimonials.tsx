@@ -2,38 +2,38 @@ import Image from "next/image";
 
 const testimonials = [
   {
-    name: "María García",
-    text: "Excelente atención. El equipo es muy profesional y cariñoso con las mascotas. Recomiendo totalmente esta clínica.",
+    name: "Maria Garcia",
+    text: "Excellent care. The team is very professional and caring with pets. I totally recommend this clinic.",
     rating: 5,
     image: "/Pets/descarga.jpeg",
   },
   {
-    name: "Juan Pérez",
-    text: "Llevé a mi perro Max aquí y quedé muy satisfecho. El servicio es impecable y los precios son justos.",
+    name: "John Perez",
+    text: "I brought my dog Max here and was very satisfied. The service is impeccable and the prices are fair.",
     rating: 5,
     image: "/Pets/descarga (1).jpeg",
   },
   {
-    name: "Ana Martínez",
-    text: "Los mejores veterinarios de Bucuresti. Siempre atentos y con un trato excelente. Mi gato está en las mejores manos.",
+    name: "Ana Martinez",
+    text: "The best veterinarians in Bucharest. Always attentive with excellent care. My cat is in the best hands.",
     rating: 5,
     image: "/Pets/images (1).jpeg",
   },
   {
-    name: "Carlos López",
-    text: "Profesionales de primera clase. La atención de emergencias fue rápida y eficiente. Muy agradecido.",
+    name: "Carlos Lopez",
+    text: "First-class professionals. The emergency care was fast and efficient. Very grateful.",
     rating: 5,
     image: "/Pets/images (2).jpeg",
   },
   {
-    name: "Laura Fernández",
-    text: "Clínica moderna con equipamiento de última tecnología. El personal es amable y muy competente.",
+    name: "Laura Fernandez",
+    text: "Modern clinic with state-of-the-art equipment. The staff is friendly and very competent.",
     rating: 5,
     image: "/Pets/images (3).jpeg",
   },
   {
     name: "Roberto Silva",
-    text: "Han cuidado de mis mascotas durante años. Siempre confío en ellos para cualquier problema de salud.",
+    text: "They have been caring for my pets for years. I always trust them for any health problem.",
     rating: 5,
     image: "/Pets/images.jpeg",
   },
@@ -45,10 +45,10 @@ export default function Testimonials() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary-dark mb-4">
-            Lo que dicen nuestros clientes
+            What Our Clients Say
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            La satisfacción de nuestros clientes es nuestra prioridad
+            Our clients' satisfaction is our priority
           </p>
         </div>
 
